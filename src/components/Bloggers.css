@@ -1,0 +1,386 @@
+.bloggers {
+  position: relative;
+  background: var(--bg-secondary);
+  overflow-x: hidden;
+}
+
+.bloggers__glow {
+  top: 30%;
+  right: -200px;
+}
+
+.bloggers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ─── Card ─── */
+.bloggers__card {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0;
+  border-radius: var(--radius-lg);
+  transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+.bloggers__card--expanded {
+  border-color: rgba(52, 152, 219, 0.25);
+  box-shadow: 0 8px 40px rgba(52, 152, 219, 0.06);
+}
+
+.bloggers__card--reverse {
+  flex-direction: row-reverse;
+}
+
+/* Photo side */
+.bloggers__photo-wrapper {
+  position: relative;
+  width: 280px;
+  min-height: 300px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.bloggers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bloggers__card:hover .bloggers__photo {
+  transform: scale(1.05);
+}
+
+.bloggers__photo-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 60%, var(--bg-glass) 100%);
+  pointer-events: none;
+}
+
+.bloggers__card--reverse .bloggers__photo-glow {
+  background: linear-gradient(to left, transparent 60%, var(--bg-glass) 100%);
+}
+
+.bloggers__photo-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 14px;
+  background: rgba(10, 14, 26, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(52, 152, 219, 0.25);
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-gold-light);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.bloggers__card--reverse .bloggers__photo-badge {
+  left: auto;
+  right: 16px;
+}
+
+/* Content side */
+.bloggers__content {
+  flex: 1;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.bloggers__quote-icon {
+  font-size: 3rem;
+  line-height: 1;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.6;
+}
+
+.bloggers__text {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* ─── Inline Expanded Content ─── */
+.bloggers__expanded {
+  overflow: hidden;
+}
+
+.bloggers__expanded-inner {
+  padding: 8px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Stars (inline) */
+.bloggers__inline-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.bloggers__star {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.1);
+  transition: color 0.3s;
+}
+
+.bloggers__star--filled {
+  color: var(--accent-gold);
+  text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Inline divider */
+.bloggers__inline-divider {
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gradient);
+  transform-origin: left;
+  border-radius: 1px;
+}
+
+/* Full text */
+.bloggers__full-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid;
+  border-image: var(--accent-gradient) 1;
+}
+
+/* Inline tags */
+.bloggers__inline-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bloggers__inline-tag {
+  padding: 5px 14px;
+  background: rgba(52, 152, 219, 0.06);
+  border: 1px solid rgba(52, 152, 219, 0.12);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  color: var(--accent-gold-light);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ─── Read More Button ─── */
+.bloggers__read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(21, 101, 168, 0.06));
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 50px;
+  color: var(--accent-gold-light);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.3px;
+}
+
+.bloggers__read-more:hover {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.18), rgba(21, 101, 168, 0.1));
+  border-color: rgba(52, 152, 219, 0.45);
+  transform: translateX(6px);
+  box-shadow: 0 6px 25px rgba(52, 152, 219, 0.2);
+}
+
+.bloggers__read-more--active {
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.15), rgba(21, 101, 168, 0.08));
+  border-color: rgba(52, 152, 219, 0.35);
+}
+
+.bloggers__read-more-icon {
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.bloggers__read-more:hover .bloggers__read-more-icon {
+  transform: translateX(4px);
+}
+
+.bloggers__read-more--active .bloggers__read-more-icon {
+  transform: none;
+}
+
+.bloggers__read-more--active:hover .bloggers__read-more-icon {
+  transform: translateY(-2px);
+}
+
+.bloggers__read-more-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.2), transparent);
+  transition: left 0.6s;
+  pointer-events: none;
+}
+
+.bloggers__read-more:hover .bloggers__read-more-shine {
+  left: 130%;
+}
+
+/* Author */
+.bloggers__author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-glass);
+}
+
+.bloggers__name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.bloggers__role {
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .bloggers__card,
+  .bloggers__card--reverse {
+    flex-direction: column;
+  }
+
+  .bloggers__photo-wrapper {
+    width: 100%;
+    min-height: 200px;
+    max-height: 240px;
+  }
+
+  .bloggers__photo-glow {
+    background: linear-gradient(to bottom, transparent 50%, var(--bg-glass) 100%) !important;
+  }
+
+  .bloggers__photo-badge {
+    left: 16px !important;
+    right: auto !important;
+  }
+
+  .bloggers__content {
+    padding: 24px 20px;
+    gap: 12px;
+  }
+
+  .bloggers__quote-icon {
+    font-size: 2rem;
+  }
+
+  .bloggers__text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .bloggers__read-more {
+    padding: 10px 22px;
+    font-size: 0.82rem;
+  }
+
+  .bloggers__name {
+    font-size: 1rem;
+  }
+
+  .bloggers__role {
+    font-size: 0.8rem;
+  }
+
+  .bloggers__full-text {
+    font-size: 0.88rem;
+    padding-left: 14px;
+  }
+
+  .bloggers__inline-tag {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+  }
+
+  .bloggers__list {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bloggers__photo-wrapper {
+    min-height: 180px;
+    max-height: 220px;
+  }
+
+  .bloggers__content {
+    padding: 20px 16px;
+    gap: 10px;
+  }
+
+  .bloggers__quote-icon {
+    font-size: 1.6rem;
+  }
+
+  .bloggers__text {
+    font-size: 0.88rem;
+  }
+
+  .bloggers__read-more {
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bloggers__author {
+    margin-top: 4px;
+    padding-top: 12px;
+  }
+
+  .bloggers__list {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .bloggers__content {
+    padding: 16px 12px;
+  }
+
+  .bloggers__photo-wrapper {
+    min-height: 160px;
+    max-height: 200px;
+  }
+
+  .bloggers__photo-badge {
+    font-size: 0.65rem;
+    padding: 4px 10px;
+  }
+}

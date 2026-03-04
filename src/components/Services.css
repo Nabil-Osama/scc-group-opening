@@ -1,0 +1,142 @@
+.services {
+  position: relative;
+  background: var(--bg-secondary);
+  overflow-x: hidden;
+}
+
+.services__glow {
+  top: -100px;
+  right: -200px;
+  opacity: 0.15;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.services__card {
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.services__card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services__card:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.services__card-icon {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 4px 10px rgba(52, 152, 219, 0.2));
+  transition: var(--transition-fast);
+}
+
+.services__card:hover .services__card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.services__card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.services__card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.services__card-features {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.services__feature {
+  padding: 6px 14px;
+  background: rgba(52, 152, 219, 0.08);
+  border: 1px solid rgba(52, 152, 219, 0.15);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.services__card:hover .services__feature {
+  border-color: rgba(52, 152, 219, 0.3);
+  background: rgba(52, 152, 219, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .services__card {
+    padding: 28px 20px;
+  }
+
+  .services__card-icon {
+    font-size: 2.2rem;
+  }
+
+  .services__card-title {
+    font-size: 1.15rem;
+  }
+
+  .services__card-desc {
+    font-size: 0.88rem;
+  }
+
+  .services__feature {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .services__card {
+    padding: 24px 16px;
+  }
+
+  .services__card-icon {
+    font-size: 1.8rem;
+  }
+
+  .services__card-title {
+    font-size: 1.05rem;
+  }
+}
