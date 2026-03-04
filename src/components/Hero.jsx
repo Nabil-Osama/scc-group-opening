@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { motion, useInView, useAnimation, animate } from 'framer-motion';
+import { motion, useInView, animate } from 'framer-motion';
 import './Hero.css';
 
 const fadeUp = {
