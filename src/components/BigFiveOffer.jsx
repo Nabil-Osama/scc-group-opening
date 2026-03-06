@@ -4,6 +4,7 @@ import faresImg from '../assets/fares.jpeg';
 import osamaImg from '../assets/osama.jpeg';
 import moImg from '../assets/mo.jpeg';
 import abdelrahmanImg from '../assets/abdelrahman.jpeg';
+import ahmedImg from '../assets/ahmed.jpg';
 import khloudImg from '../assets/khloud.jpeg';
 import './BigFiveOffer.css';
 
@@ -70,7 +71,7 @@ const creators = [
         name: 'عبد الرحمن أيمن',
         nameEn: 'Abdelrahman Ayman',
         image: abdelrahmanImg,
-        followers: '+2M',
+        followers: '+3M',
         desc: 'صانع محتوى متخصص في لقاءات المشاهير والمهرجانات السينمائيه مبدع رقمي صاعد يتميز بالالتزام والاحترافية، يعمل على تطوير محتوى مبتكر يدعم نمو المشاريع الرقمية. يمثل عنصرًا داعمًا لبناء شراكات طويلة الأمد وتحقيق عوائد تسويقية مستدامة.',
         platforms: {
             facebook: 'https://www.facebook.com/share/1M1SLNMueB/',
@@ -86,6 +87,23 @@ const creators = [
     },
     {
         id: 5,
+        name: 'احمد سباق',
+        nameEn: 'Ahmed Sebak',
+        image: ahmedImg,
+        followers: '+1M',
+        desc: 'صانع محتوى مبدع ومؤثر يتميز بأسلوبه الفريد في تقديم المحتوى الرقمي، يمتلك قاعدة جماهيرية واسعة وتأثير قوي على منصات التواصل الاجتماعي. يقدم محتوى احترافي يجذب الجمهور ويحقق معدلات تفاعل عالية، مما يجعله شريكًا مثاليًا للعلامات التجارية والحملات الإعلانية.',
+        platforms: {
+            facebook: 'https://www.facebook.com/share/17hY3VQWHN/?mibextid=wwXIfr',
+
+        },
+        links: [
+            { label: 'Facebook', url: 'https://www.facebook.com/share/17hY3VQWHN/?mibextid=wwXIfr' },
+
+        ],
+        available: true,
+    },
+    {
+        id: 6,
         name: 'المذيعة خلود سعودي',
         nameEn: 'Khloud Soudy',
         image: khloudImg,
@@ -102,7 +120,7 @@ const creators = [
         available: true,
     },
     {
-        id: 6,
+        id: 7,
         name: 'مفاجأة الافتتاح',
         nameEn: 'The 6th Creator',
         image: '',
@@ -324,7 +342,12 @@ export default function BigFiveOffer() {
                             >
                                 <div className="big5__sidebar-avatar">
                                     {creator.available ? (
-                                        <img src={creator.image} alt={creator.name} loading="lazy" />
+                                        <img
+                                            src={creator.image}
+                                            alt={creator.name}
+                                            loading="lazy"
+                                            style={creator.id === 3 ? { objectPosition: 'center 0%' } : {}}
+                                        />
                                     ) : (
                                         <span>?</span>
                                     )}
@@ -351,7 +374,12 @@ export default function BigFiveOffer() {
                                 <div className="big5__profile-header">
                                     <div className="big5__profile-avatar-wrap">
                                         {activeCreator.image ? (
-                                            <img src={activeCreator.image} alt={activeCreator.name} className="big5__profile-img" />
+                                            <img
+                                                src={activeCreator.image}
+                                                alt={activeCreator.name}
+                                                className="big5__profile-img"
+                                                style={activeCreator.id === 3 ? { objectPosition: 'center 0%' } : {}}
+                                            />
                                         ) : (
                                             <div className="big5__profile-img-placeholder" style={{ color: 'var(--accent-gold)' }}>🎭</div>
                                         )}
