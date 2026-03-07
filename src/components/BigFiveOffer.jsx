@@ -11,20 +11,20 @@ import './BigFiveOffer.css';
 const creators = [
     {
         id: 1,
-        name: 'فارس الطماوي',
-        nameEn: 'Fares El-Tamawy',
-        image: faresImg,
+        name: 'مو سيلفا',
+        nameEn: 'Mo Selva',
+        image: moImg,
         followers: '+10M',
-        desc: 'يعد من ابرز صناع المحتوى المؤثرين قي مصر وهو صانع محتوى يمتلك رؤية إعلامية واضحة وقدرة قوية على التأثير في فئة الشباب. يركز على تقديم حملات رقمية احترافية قابلة للقياس، مما يجعله شريكًا موثوقًا للعلامات التجارية والمستثمرين.',
+        desc: 'صانع محتوى يتمتع بقاعدة جماهيرية نشطة وتأثير رقمي متنامٍ، يقدم محتوى عالي الجودة يحقق معدلات تفاعل مرتفعة. يمثل فرصة استراتيجية للشراكات الإعلانية وبناء حملات تسويقية فعّالة تستهدف فئات متنوعة من الجمهور.',
         platforms: {
-            facebook: 'https://web.facebook.com/Eltamawyfares',
-            instagram: 'https://www.instagram.com/faresalieltamawy?igsh=OWljbTNhcDFuZHA3',
-            tiktok: 'https://www.tiktok.com/@fareseltamawy99?_r=1&_t=ZN-94G5dbVpuDO'
+            facebook: 'https://web.facebook.com/moselvaofficial',
+            instagram: 'https://www.instagram.com/moselva_1?igsh=eDdlNWdvd214MXM0',
+            tiktok: 'https://www.tiktok.com/@mo_selva?_r=1&_t=ZN-94G5YXL0une'
         },
         links: [
-            { label: 'Facebook', url: 'https://web.facebook.com/Eltamawyfares' },
-            { label: 'Instagram', url: 'https://www.instagram.com/faresalieltamawy?igsh=OWljbTNhcDFuZHA3' },
-            { label: 'TikTok', url: 'https://www.tiktok.com/@fareseltamawy99?_r=1&_t=ZN-94G5dbVpuDO' }
+            { label: 'Facebook', url: 'https://web.facebook.com/moselvaofficial' },
+            { label: 'Instagram', url: 'https://www.instagram.com/moselva_1?igsh=eDdlNWdvd214MXM0' },
+            { label: 'TikTok', url: 'https://www.tiktok.com/@mo_selva?_r=1&_t=ZN-94G5YXL0une' }
         ],
         available: true,
     },
@@ -33,7 +33,7 @@ const creators = [
         name: 'أسامة الحداد',
         nameEn: 'Osama El-Haddad',
         image: osamaImg,
-        followers: '+5M',
+        followers: '+6M',
         desc: 'رائد في مجال المحتوى الإنساني والمبادرات المجتمعية، يتميز بالمصداقية والثقة الجماهيرية العالية. يوفر بيئة مثالية للرعاة الراغبين في دعم المسؤولية المجتمعية وبناء صورة ذهنية إيجابية للعلامات التجارية.',
         platforms: {
             facebook: 'https://web.facebook.com/osamaElhada',
@@ -49,20 +49,20 @@ const creators = [
     },
     {
         id: 3,
-        name: 'مو سيلفا',
-        nameEn: 'Mo Selva',
-        image: moImg,
-        followers: '+3M',
-        desc: 'صانع محتوى يتمتع بقاعدة جماهيرية نشطة وتأثير رقمي متنامٍ، يقدم محتوى عالي الجودة يحقق معدلات تفاعل مرتفعة. يمثل فرصة استراتيجية للشراكات الإعلانية وبناء حملات تسويقية فعّالة تستهدف فئات متنوعة من الجمهور.',
+        name: 'فارس الطماوي',
+        nameEn: 'Fares El-Tamawy',
+        image: faresImg,
+        followers: '+5M',
+        desc: 'يعد من ابرز صناع المحتوى المؤثرين قي مصر وهو صانع محتوى يمتلك رؤية إعلامية واضحة وقدرة قوية على التأثير في فئة الشباب. يركز على تقديم حملات رقمية احترافية قابلة للقياس، مما يجعله شريكًا موثوقًا للعلامات التجارية والمستثمرين.',
         platforms: {
-            facebook: 'https://web.facebook.com/moselvaofficial',
-            instagram: 'https://www.instagram.com/moselva_1?igsh=eDdlNWdvd214MXM0',
-            tiktok: 'https://www.tiktok.com/@mo_selva?_r=1&_t=ZN-94G5YXL0une'
+            facebook: 'https://web.facebook.com/Eltamawyfares',
+            instagram: 'https://www.instagram.com/faresalieltamawy?igsh=OWljbTNhcDFuZHA3',
+            tiktok: 'https://www.tiktok.com/@fareseltamawy99?_r=1&_t=ZN-94G5dbVpuDO'
         },
         links: [
-            { label: 'Facebook', url: 'https://web.facebook.com/moselvaofficial' },
-            { label: 'Instagram', url: 'https://www.instagram.com/moselva_1?igsh=eDdlNWdvd214MXM0' },
-            { label: 'TikTok', url: 'https://www.tiktok.com/@mo_selva?_r=1&_t=ZN-94G5YXL0une' }
+            { label: 'Facebook', url: 'https://web.facebook.com/Eltamawyfares' },
+            { label: 'Instagram', url: 'https://www.instagram.com/faresalieltamawy?igsh=OWljbTNhcDFuZHA3' },
+            { label: 'TikTok', url: 'https://www.tiktok.com/@fareseltamawy99?_r=1&_t=ZN-94G5dbVpuDO' }
         ],
         available: true,
     },
@@ -282,8 +282,8 @@ export default function BigFiveOffer() {
                         </motion.span>
                     </motion.h2>
                     <p className="big5__tagline">
-                        انطلاقة براندك بقوة تصل إلى أكثر من
-                        <span className="big5__highlight"> 20 مليون متابع </span>
+                        انطلاقة براندك بقوة تصل إلى
+                        <span className="big5__highlight"> 26 مليون متابع </span>
                         في ساعة واحدة!
                     </p>
                     <p className="big5__tagline-sub">
@@ -346,7 +346,7 @@ export default function BigFiveOffer() {
                                             src={creator.image}
                                             alt={creator.name}
                                             loading="lazy"
-                                            style={creator.id === 3 ? { objectPosition: 'center 0%' } : {}}
+                                            style={creator.id === 1 ? { objectPosition: 'center 0%' } : {}}
                                         />
                                     ) : (
                                         <span>?</span>
@@ -378,7 +378,7 @@ export default function BigFiveOffer() {
                                                 src={activeCreator.image}
                                                 alt={activeCreator.name}
                                                 className="big5__profile-img"
-                                                style={activeCreator.id === 3 ? { objectPosition: 'center 0%' } : {}}
+                                                style={activeCreator.id === 1 ? { objectPosition: 'center 0%' } : {}}
                                             />
                                         ) : (
                                             <div className="big5__profile-img-placeholder" style={{ color: 'var(--accent-gold)' }}>🎭</div>
