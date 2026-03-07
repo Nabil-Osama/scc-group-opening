@@ -1,6 +1,9 @@
 .about {
   position: relative;
-  overflow-x: hidden;
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
+  padding-top: 60px !important;
 }
 
 .about__glow {
@@ -75,7 +78,7 @@
 .about__card {
   display: flex;
   gap: 24px;
-  padding: 32px;
+  padding: 24px 32px;
   align-items: flex-start;
   transition: var(--transition-smooth);
 }
@@ -109,7 +112,7 @@
 .about__card-desc {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 @media (max-width: 900px) {

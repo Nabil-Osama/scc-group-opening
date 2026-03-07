@@ -78,6 +78,8 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 #root {
@@ -99,14 +101,10 @@ body {
 }
 
 /* ── Scrollbar ── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--blue-400), var(--cyan-400));
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--blue-300), var(--cyan-300));
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+  width: 0;
+  background: transparent;
 }
 
 /* ── Container ── */
