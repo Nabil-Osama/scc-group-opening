@@ -70,7 +70,7 @@ export default function Hero() {
                     animate="visible"
                     custom={2}
                 >
-                    انطلاقة براندك بقوة تصل إلى أكثر من <span className="text-highlight">20 مليون متابع</span> في ساعة واحدة!
+                    انطلاقة براندك بقوة تصل إلى <span className="text-highlight">26 مليون متابع</span> في ساعة واحدة!
                     نقدم حلول إبداعية تجمع بين التأثير الرقمي والتواجد الميداني.
                 </motion.p>
 
@@ -98,7 +98,7 @@ export default function Hero() {
                 >
                     <div className="hero__stat">
                         <span className="hero__stat-number">
-                            <AnimatedCounter to={20} prefix="+" suffix="M" />
+                            <AnimatedCounter to={26} prefix="+" suffix="M" />
                         </span>
                         <span className="hero__stat-label">إجمالي الوصول</span>
                     </div>
