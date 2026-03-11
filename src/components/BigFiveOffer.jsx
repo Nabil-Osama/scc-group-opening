@@ -4,7 +4,6 @@ import faresImg from '../assets/fares.jpeg';
 import osamaImg from '../assets/osama.jpeg';
 import moImg from '../assets/mo.jpeg';
 import abdelrahmanImg from '../assets/abdelrahman.jpeg';
-import gammalImg from '../assets/gammal.jpg';
 import './BigFiveOffer.css';
 
 const creators = [
@@ -88,7 +87,7 @@ const creators = [
         id: 5,
         name: 'محمود الجمال',
         nameEn: 'Mahmoud El-Gammal',
-        image: gammalImg,
+        image: '',
         followers: '+1.5M',
         desc: 'صانع المحتوى محمود الجمال يتمتع بحضور رقمي متصاعد وقاعدة جماهيرية نشطة، ويقدّم محتوى احترافيًا عالي الجودة يحقق معدلات تفاعل ملحوظة على مختلف المنصات الرقمية. كما يمثل منصة مؤثرة للتعاونات الإعلانية وبناء حملات تسويقية استراتيجية تستهدف شرائح متعددة من الجمهور، مع قدرة واضحة على تعزيز الانتشار الرقمي وتحقيق قيمة حقيقية للعلامات التجارية والشركاء',
         platforms: {
