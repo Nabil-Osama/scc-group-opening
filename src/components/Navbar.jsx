@@ -22,9 +22,27 @@ export default function Navbar() {
 
     const handleNavClick = (e, href) => {
         e.preventDefault();
+        const wasMenuOpen = menuOpen;
         setMenuOpen(false);
-        const el = document.querySelector(href);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
+
+        const scrollToTarget = () => {
+            const el = document.querySelector(href);
+            if (el) {
+                const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 70;
+                const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: elementPosition - navbarHeight,
+                    behavior: 'smooth'
+                });
+            }
+        };
+
+        if (wasMenuOpen) {
+            // Wait for the mobile menu close animation to finish before scrolling
+            setTimeout(scrollToTarget, 350);
+        } else {
+            scrollToTarget();
+        }
     };
 
     return (
