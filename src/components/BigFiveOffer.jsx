@@ -4,8 +4,7 @@ import faresImg from '../assets/fares.jpeg';
 import osamaImg from '../assets/osama.jpeg';
 import moImg from '../assets/mo.jpeg';
 import abdelrahmanImg from '../assets/abdelrahman.jpeg';
-import ahmedImg from '../assets/ahmed.jpg';
-import khloudImg from '../assets/khloud.jpeg';
+import gammalImg from '../assets/gammal.jpg';
 import './BigFiveOffer.css';
 
 const creators = [
@@ -87,40 +86,25 @@ const creators = [
     },
     {
         id: 5,
-        name: 'احمد سباق',
-        nameEn: 'Ahmed Sebak',
-        image: ahmedImg,
-        followers: '+1M',
-        desc: 'صانع محتوى مبدع ومؤثر يتميز بأسلوبه الفريد في تقديم المحتوى الرقمي، يمتلك قاعدة جماهيرية واسعة وتأثير قوي على منصات التواصل الاجتماعي. يقدم محتوى احترافي يجذب الجمهور ويحقق معدلات تفاعل عالية، مما يجعله شريكًا مثاليًا للعلامات التجارية والحملات الإعلانية.',
+        name: 'محمود الجمال',
+        nameEn: 'Mahmoud El-Gammal',
+        image: gammalImg,
+        followers: '+1.5M',
+        desc: 'صانع المحتوى محمود الجمال يتمتع بحضور رقمي متصاعد وقاعدة جماهيرية نشطة، ويقدّم محتوى احترافيًا عالي الجودة يحقق معدلات تفاعل ملحوظة على مختلف المنصات الرقمية. كما يمثل منصة مؤثرة للتعاونات الإعلانية وبناء حملات تسويقية استراتيجية تستهدف شرائح متعددة من الجمهور، مع قدرة واضحة على تعزيز الانتشار الرقمي وتحقيق قيمة حقيقية للعلامات التجارية والشركاء',
         platforms: {
-            facebook: 'https://www.facebook.com/share/17hY3VQWHN/?mibextid=wwXIfr',
-
+            facebook: 'https://www.facebook.com/ElGammalEG',
+            instagram: 'https://www.instagram.com/ELGammalEG?fbclid=IwY2xjawQd0CxleHRuA2FlbQIxMABicmlkETE3YzNMNE1MdjBEamgyWjNoc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrVDYkUY1wz1WZon8BGZd3DKnenJujrMSLgRe7ggsj59AlUS5DuHGzy5phiV_aem_uQsIvZv-14L9kGyRgGaJlw',
+            tiktok: 'https://www.tiktok.com/@ELGammalEG?fbclid=IwY2xjawQd0nBleHRuA2FlbQIxMABicmlkETE3YzNMNE1MdjBEamgyWjNoc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqD-6MSrM-pyJTFWqsE3FZnMPuF1vSKZgydJv7kTCMUC8BMq2JoabIu0Qn8z_aem_O0FAZ64ctHLAFlv47mjtdw'
         },
         links: [
-            { label: 'Facebook', url: 'https://www.facebook.com/share/17hY3VQWHN/?mibextid=wwXIfr' },
-
+            { label: 'Facebook', url: 'https://www.facebook.com/ElGammalEG' },
+            { label: 'Instagram', url: 'https://www.instagram.com/ELGammalEG?fbclid=IwY2xjawQd0CxleHRuA2FlbQIxMABicmlkETE3YzNMNE1MdjBEamgyWjNoc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHrVDYkUY1wz1WZon8BGZd3DKnenJujrMSLgRe7ggsj59AlUS5DuHGzy5phiV_aem_uQsIvZv-14L9kGyRgGaJlw' },
+            { label: 'TikTok', url: 'https://www.tiktok.com/@ELGammalEG?fbclid=IwY2xjawQd0nBleHRuA2FlbQIxMABicmlkETE3YzNMNE1MdjBEamgyWjNoc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqD-6MSrM-pyJTFWqsE3FZnMPuF1vSKZgydJv7kTCMUC8BMq2JoabIu0Qn8z_aem_O0FAZ64ctHLAFlv47mjtdw' }
         ],
         available: true,
     },
     {
         id: 6,
-        name: 'المذيعة خلود سعودي',
-        nameEn: 'Khloud Soudy',
-        image: khloudImg,
-        followers: '+1M',
-        desc: 'خلود سعودي هي صانعة محتوى رقمية صاعدة ومتخصصة في تقديم محتوى تفاعلي حديث على جميع المنصات ، تتميز بأسلوب جذاب يعكس الاحترافية والالتزام في تنفيذ الحملات الإعلانية وصناعة المحتوى المؤثر. تعمل على تطوير أفكار مبتكرة تتماشى مع متطلبات السوق الرقمي، مما يساهم في تعزيز انتشار العلامات التجارية وزيادة معدلات التفاعل. تمثل عنصرًا فعالًا في دعم نمو المشاريع الرقمية وبناء شراكات إعلانية طويلة الأمد، مع التركيز على تحقيق نتائج تسويقية قوية ومستدامة من خلال محتوى إبداعي موجه للجمهور المستهدف.',
-        platforms: {
-            facebook: 'https://www.facebook.com/share/17xxBRNzak/',
-            tiktok: 'https://www.tiktok.com/@khloudsoudy7?_r=1&_t=ZN-94ImQUqhja2'
-        },
-        links: [
-            { label: 'Facebook', url: 'https://www.facebook.com/share/17xxBRNzak/' },
-            { label: 'TikTok', url: 'https://www.tiktok.com/@khloudsoudy7?_r=1&_t=ZN-94ImQUqhja2' }
-        ],
-        available: true,
-    },
-    {
-        id: 7,
         name: 'مفاجأة الافتتاح',
         nameEn: 'The 6th Creator',
         image: '',
@@ -323,9 +307,8 @@ export default function BigFiveOffer() {
                                     // Scroll to main profile on smaller screens
                                     if (window.innerWidth <= 900) {
                                         setTimeout(() => {
-                                            const nameSection = document.querySelector('.big5__profile-name');
-                                            // Fallback to name or main if it's the mystery one (which might render differently)
-                                            const target = nameSection || document.querySelector('.big5__main');
+                                            const avatarSection = document.querySelector('.big5__profile-avatar-wrap');
+                                            const target = avatarSection || document.querySelector('.big5__main');
                                             if (target) {
                                                 const headerOffset = 100;
                                                 const elementPosition = target.getBoundingClientRect().top;
